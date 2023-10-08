@@ -932,6 +932,8 @@ typedef struct EbSvtAv1EncConfiguration {
     Bool    enable_roi_map;
     uint8_t padding[64 - sizeof(Bool)];
 
+    AomFilmGrain *fgs_table;
+
     /* @brief Boost low variance regions according to a fast-growing formula
         0: no boost
         1: mild boost
